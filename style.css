@@ -5,24 +5,25 @@
 }
 
 .container{
-    width: 100%;
-    height: 100vh;
-    background-color: #0F45C7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
 .container h2{
-    color: white;
-    position: absolute;
-    bottom: 500px;
-    border: 2px solid;
-    font-size: 3rem;
+    margin-bottom: 2rem;
+    border: 2px solid #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
 }
 
 .weather-container{
-    color: #fff;
+    width: min(520px, 92vw);
+    padding: 1.5rem 1.2rem;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    margin-bottom: 1.5rem;
 }
 
 .temp{
@@ -39,18 +40,29 @@
 }
 
 nav{
-    height: 50px;
+    width: min(520px, 92vw);
+}
+
+nav form{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .search-btn{
-    padding: 1rem 0;
-    border: 2px  solid;
+    flex: 1 1 260px;        /* responsive inside flex form */
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 2px solid #fff;
     border-radius: 10px;
     font-size: 1.1rem;
-    margin: 1rem;
+    margin: 0.5rem 0;
     background-color: transparent;
     color: white;
+    outline: none;
 }
+
 
 nav form button {
     background-color: #fff;
@@ -67,3 +79,70 @@ nav form button:hover{
     background-color: #25F1AD;
 }
 
+/* =========================
+   📱 Mobile (max 480px)
+   ========================= */
+@media (max-width: 480px){
+    .container{
+        padding: 1.5rem 1rem;
+    }
+
+    .container h2{
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .temp{
+        font-size: 3rem;
+    }
+
+    .location{
+        font-size: 1.4rem;
+    }
+
+    .weather-condition{
+        margin: 0.6rem 0;
+        font-size: 1.1rem;
+    }
+
+    nav form button{
+        width: 100%;
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   📱 Tablets (481px to 768px)
+   ========================= */
+@media (min-width: 481px) and (max-width: 768px){
+    .container h2{
+        font-size: 2.3rem;
+    }
+
+    .temp{
+        font-size: 3.8rem;
+    }
+
+    .location{
+        font-size: 1.7rem;
+    }
+
+    nav form button{
+        padding: 0.8rem 1rem;
+    }
+}
+
+/* =========================
+   💻 Large screens (1200px+)
+   ========================= */
+@media (min-width: 1200px){
+    .container h2{
+        font-size: 3.2rem;
+    }
+
+    .weather-container{
+        width: 560px;
+        padding: 1.8rem 1.6rem;
+    }
+}
