@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #0F45C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container{
+    color: #fff;
+}
+
+.temp{
+    font-size: 4.5rem;
+}
+
+.location{
+    font-size: 2rem;
+}
+
+.weather-condition{
+    margin: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+nav{
+    height: 50px;
+}
+
+.search-btn{
+    padding: 1rem 0;
+    border: 2px  solid;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 1rem;
+    background-color: transparent;
+    color: white;
+}
+
+nav form button {
+    background-color: #fff;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+nav form button:hover{
+    background-color: #25F1AD;
+}
+
