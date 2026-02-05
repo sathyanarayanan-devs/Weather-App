@@ -13,6 +13,14 @@
     align-items: center;
 }
 
+.container h2{
+    color: white;
+    position: absolute;
+    bottom: 500px;
+    border: 2px solid;
+    font-size: 3rem;
+}
+
 .weather-container{
     color: #fff;
 }
