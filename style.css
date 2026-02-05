@@ -57,11 +57,10 @@ nav form{
     flex: 1 1 260px;        /* responsive inside flex form */
     width: 100%;
     padding: 0.9rem 1rem;
-    border: 2px solid #fff;
+    border: 2px solid #333;
     border-radius: 10px;
     font-size: 1.1rem;
     margin: 0.5rem 0;
-    background-color: transparent;
     color: black;
     outline: none;
 }
